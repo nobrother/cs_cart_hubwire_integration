@@ -1,0 +1,121 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "SettingsSections::cs_cart_hubwire_integration::general"
+msgid "General"
+msgstr "General"
+
+msgctxt "SettingsSections::cs_cart_hubwire_integration::api_account"
+msgid "api_account"
+msgstr "Cs Cart API Account"
+
+msgctxt "SettingsOptions::cs_cart_hubwire_integration::api_account_header"
+msgid "api_account_header"
+msgstr "Cs Cart API Account"
+
+msgctxt "SettingsOptions::cs_cart_hubwire_integration::general_header"
+msgid "general_header"
+msgstr "General"
+
+msgctxt "SettingsOptions::cs_cart_hubwire_integration::api_email"
+msgid "api_email"
+msgstr "Email"
+
+msgctxt "SettingsOptions::cs_cart_hubwire_integration::api_key"
+msgid "api_key"
+msgstr "API key"
+
+msgctxt "SettingsOptions::cs_cart_hubwire_integration::brand_id"
+msgid "brand_id"
+msgstr "Id for Brand Feature"
+
+msgctxt "SettingsOptions::cs_cart_hubwire_integration::default_category_id"
+msgid "default_category_id"
+msgstr "Default Category ID"
+
+msgctxt "SettingsOptions::cs_cart_hubwire_integration::tax_id"
+msgid "tax_id"
+msgstr "Tax ID"
+
+msgctxt "SettingsOptions::cs_cart_hubwire_integration::shipped_order_status"
+msgid "shipped_order_status"
+msgstr "Order status - Shipped"
+
+msgctxt "Languages::hubwire_integration_title"
+msgid "hubwire_integration_title"
+msgstr "Hubwire Integrations"
+
+msgctxt "Languages::hubwire_product_id"
+msgid "hubwire_product_id"
+msgstr "Hubwire Product ID"
+
+msgctxt "Languages::hubwire_resync_product"
+msgid "hubwire_resync_product"
+msgstr "Product"
+
+msgctxt "Languages::hubwire_order_id"
+msgid "hubwire_order_id"
+msgstr "Hubwire Order ID"
+
+msgctxt "Languages::hubwire_tracking_no"
+msgid "hubwire_tracking_no"
+msgstr "Hubwire Tracking No"
+
+msgctxt "Languages::hubwire_resync_order"
+msgid "hubwire_resync_order"
+msgstr "Order"
+
+msgctxt "Languages::hubwire_client_id"
+msgid "hubwire_client_id"
+msgstr "Hubwire Client ID"
+
+msgctxt "Languages::hubwire_client_secret"
+msgid "hubwire_client_secret"
+msgstr "Hubwire Client Secret"
+
+msgctxt "Languages::default_products_category"
+msgid "default_products_category"
+msgstr "Default Category ID"
+
+msgctxt "Languages::hubwire_vendor_create_webhooks"
+msgid "hubwire_vendor_create_webhooks"
+msgstr "Webhooks"
+
+msgctxt "Languages::hubwire_vendor_resync_products"
+msgid "hubwire_vendor_resync_products"
+msgstr "Products"
+
+msgctxt "Languages::btn_create"
+msgid "btn_create"
+msgstr "Create"
+
+msgctxt "Languages::btn_resync"
+msgid "btn_resync"
+msgstr "Resync"
+
+msgctxt "Languages::hubwire_sku_id"
+msgid "hubwire_sku_id"
+msgstr "Hubwire SKU ID"
+
+msgctxt "Languages::hubwire_sku"
+msgid "hubwire_sku"
+msgstr "Hubwire SKU"
+
+msgctxt "Languages::hubwire_sku_list_price"
+msgid "hubwire_sku_list_price"
+msgstr "List price"
+
+msgctxt "Languages::hubwire_sku_price"
+msgid "hubwire_sku_price"
+msgstr "Price"
+
+msgctxt "Languages::hubwire_sku_weight"
+msgid "hubwire_sku_weight"
+msgstr "Hubwire Weight"
+
+msgctxt "Languages::promotion_provider"
+msgid "promotion_provider"
+msgstr "Provider"

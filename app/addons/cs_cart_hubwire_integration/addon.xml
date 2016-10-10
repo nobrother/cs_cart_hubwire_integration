@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+	<id>cs_cart_hubwire_integration</id>
+	<version>1.0</version>
+	<description>Say hello to the world</description>
+	<priority>100</priority>
+	<position>0</position>
+	<status>active</status>
+	<default_language>en</default_language>
+	<auto_install>MULTIVENDOR</auto_install>
+	<compatibility>
+		<core_edition>MULTIVENDOR</core_edition>
+	</compatibility>	
+	
+	<queries>
+		<!--
+		<item for="install">
+			ALTER TABLE `?:products` ADD `hubwire_product_id` int(11) NOT NULL;
+		</item>
+		<item for="install">
+			ALTER TABLE `?:product_options_inventory` ADD `hubwire_sku_id` int(11) NOT NULL;
+		</item>
+		<item for="install">
+			ALTER TABLE `?:product_options_inventory` ADD `hubwire_sku` varchar(128) NOT NULL;
+		</item>
+		<item for="install">
+			ALTER TABLE `?:product_options_inventory` ADD `price` decimal(12,2) NOT NULL;
+		</item>
+		<item for="install">
+			ALTER TABLE `?:product_options_inventory` ADD `list_price` decimal(12,2) NOT NULL;
+		</item>
+		<item for="install">
+			ALTER TABLE `?:product_options_inventory` ADD `weight` decimal(13,3) NOT NULL;
+		</item>
+		<item for="install">
+			ALTER TABLE `?:orders` ADD `hubwire_order_id` int(11) NOT NULL;
+		</item>
+		<item for="install">
+			ALTER TABLE `?:orders` ADD `hubwire_tracking_no` varchar(128) NOT NULL;
+		</item>
+		<item for="install">
+			ALTER TABLE `?:companies` ADD `hubwire_client_id` varchar(128) NOT NULL;
+		</item>
+		<item for="install">
+			ALTER TABLE `?:companies` ADD `hubwire_client_secret` varchar(128) NOT NULL;
+		</item>
+		<item for="install">
+			ALTER TABLE `?:companies` ADD `default_products_category` int(11) NOT NULL;
+		</item>
+		<item for="install">
+			ALTER TABLE `?:images_links` ADD `hubwire_media_id` int(11) NOT NULL;
+		</item>
+		<item for="install">
+			ALTER TABLE `?:promotions` ADD `provider` int(11) NOT NULL;
+		</item>	
+		
+		<item for="uninstall">
+			ALTER TABLE `?:products` DROP `hubwire_product_id`;
+		</item>
+		<item for="uninstall">
+			ALTER TABLE `?:product_options_inventory` DROP `hubwire_sku_id`;
+		</item>
+		<item for="uninstall">
+			ALTER TABLE `?:product_option_variants` DROP `hubwire_sku_id`;
+		</item>
+		<item for="uninstall">
+			ALTER TABLE `?:product_options_inventory` DROP `price`;
+		</item>
+		<item for="uninstall">
+			ALTER TABLE `?:product_options_inventory` DROP `list_price`;
+		</item>
+		<item for="uninstall">
+			ALTER TABLE `?:product_options_inventory` DROP `weight`;
+		</item>
+		<item for="uninstall">
+			ALTER TABLE `?:orders` DROP `hubwire_order_id`;
+		</item>
+		<item for="uninstall">
+			ALTER TABLE `?:companies` DROP `hubwire_client_id`;
+		</item>
+		<item for="uninstall">
+			ALTER TABLE `?:companies` DROP `hubwire_client_secret`;
+		</item>
+		-->
+	</queries>
+	
+	<settings edition_type="ROOT,ULT:VENDOR">
+		<sections>
+			<section id="api_account">
+				<items>
+					<item id="api_account_header">
+						<type>header</type>
+					</item>
+					<item id="info">
+						<type>info</type>
+						<handler>fn_cs_cart_hubwire_integration_settings_tpl</handler>
+					</item>
+					<item id="api_email">
+						<type>email</type>
+						<default_value>chang@gmail.com</default_value>
+					</item>
+					<item id="api_key">
+						<type>input</type>
+						<default_value>5s439NBncu8G14810z53z295roR8Nys0</default_value>
+					</item>
+				</items>
+			</section>
+			
+			<section id="general">
+				<items>
+					<item id="general_header">
+						<type>header</type>
+					</item>
+					<item id="brand_id">
+						<type>input</type>
+						<default_value>18</default_value>
+					</item>
+					<item id="default_category_id">
+						<type>input</type>
+						<default_value>223</default_value>
+					</item>
+					<item id="tax_id">
+						<type>input</type>
+						<default_value>7</default_value>
+					</item>
+					<item id="shipped_order_status">
+						<type>input</type>
+						<default_value>A</default_value>
+					</item>
+				</items>
+			</section>
+		</sections>
+	</settings>
+</addon>
