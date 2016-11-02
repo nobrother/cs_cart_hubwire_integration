@@ -45,6 +45,7 @@ class Curl extends c{
 		
 		// Decode json		
 		$response = json_decode( $this->response, true );
+		// error_log(print_r($response, true));
 		if( !is_array ( $response ) ){	
 			error_log(print_r($this->response, true));
 			throw new \Exception( 'Response is not json.' );
@@ -77,7 +78,9 @@ class Curl extends c{
 			'client_secret' => $this->client_secret,
 			'grant_type' => $this->grant_type
 		);
+		//error_log(print_r($this->post_fields, true));
 		$this->create()->execute();
+		
 		
 		// Store token
 		$response = $this->response;

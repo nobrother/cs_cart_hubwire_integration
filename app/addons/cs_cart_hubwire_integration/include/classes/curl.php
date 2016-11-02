@@ -101,9 +101,9 @@ class Curl {
 		
 		if( !empty( $this->custom_request ) )
 			curl_setopt( $this->_curl, CURLOPT_CUSTOMREQUEST, $this->custom_request );
-		else
-			curl_setopt( $this->_curl, CURLOPT_CUSTOMREQUEST, null );
-		
+		// else
+			// curl_setopt( $this->_curl, CURLOPT_CUSTOMREQUEST, null );
+		// error_log(print_r($this->post_fields));
 		$this->response = curl_exec( $this->_curl ); 
 		$this->status = curl_getinfo( $this->_curl ); 
 		$this->error = curl_error( $this->_curl );
